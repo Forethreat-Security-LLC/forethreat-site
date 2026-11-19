@@ -171,6 +171,13 @@ details p{ color:var(--muted); margin:10px 0 0; }
 .quote .attr .dot{ width:34px; height:34px; border-radius:10px; flex:0 0 auto; background:linear-gradient(135deg,var(--accent),var(--accent2)); }
 .quote .attr .role{ font-weight:600; color:rgba(255,255,255,.92); font-size:.92rem; line-height:1.3; }
 .quote .attr .org{ color:var(--muted2); font-size:.85rem; }
+.quote.featured{ margin:0; padding:26px 28px; max-width:900px; margin-inline:auto; }
+.quote.featured blockquote{ font-size:1.05rem; }
+.quote.featured blockquote::before{ content:none; }
+.quote.featured blockquote p{ margin:0 0 12px; }
+.quote.featured blockquote p:first-child::before{ content:"\201C"; color:var(--accent); font-size:1.4rem; font-weight:700; margin-right:2px; }
+.quote.featured blockquote p:last-child{ margin-bottom:0; }
+.quote.featured blockquote p:last-child::after{ content:"\201D"; color:var(--accent); font-size:1.4rem; font-weight:700; margin-left:2px; }
 
 /* ======================================================================
    2026-11 decluttered layout additions
